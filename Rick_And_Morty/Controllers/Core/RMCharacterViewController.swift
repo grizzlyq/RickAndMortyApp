@@ -8,8 +8,8 @@
 import UIKit
 
 /// controller to show and search for characters
-final class RMCharacterViewController: UIViewController {
-    
+final class RMCharacterViewController: UIViewController, RMCharacterListViewDelegate {
+       
     private let charactersListView = RMCharacterListView()
     
     override func viewDidLoad() {
@@ -21,6 +21,7 @@ final class RMCharacterViewController: UIViewController {
     }
     
     private func setUpView() {
+        charactersListView.delegate = self
         view.addSubview(charactersListView)
         NSLayoutConstraint.activate([
             charactersListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -28,6 +29,17 @@ final class RMCharacterViewController: UIViewController {
             charactersListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             charactersListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
+    }
+    
+    // MARK: - RMCharacterListViewDelegate
+    func rmRMCharacterListView(_ characterListView: RMCharacterListView, didSelectCharacter character: RMCharacter) {
+        // open detail controller for that character
+        let viewModel = RMCharacterDetailViewViewModel(character: character)
+        let detailVC = RMCharacterDetailViewController(viewModel: viewModel)
+        detailVC.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(detailVC, animated: true)
+        
+        
     }
 }
     
