@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891D13892993D25200E5A5F4 /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891D13882993D25200E5A5F4 /* RMImageLoader.swift */; };
 		89836092298BDB3F001511C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89836091298BDB3F001511C4 /* AppDelegate.swift */; };
 		89836094298BDB3F001511C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89836093298BDB3F001511C4 /* SceneDelegate.swift */; };
 		89836096298BDB3F001511C4 /* RMTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89836095298BDB3F001511C4 /* RMTabViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		891D13882993D25200E5A5F4 /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
 		8983608E298BDB3F001511C4 /* Rick_And_Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rick_And_Morty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89836091298BDB3F001511C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89836093298BDB3F001511C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		891D13872993D1E800E5A5F4 /* Manages */ = {
+			isa = PBXGroup;
+			children = (
+				891D13882993D25200E5A5F4 /* RMImageLoader.swift */,
+			);
+			path = Manages;
+			sourceTree = "<group>";
+		};
 		89836085298BDB3F001511C4 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				898360AA298BDD55001511C4 /* Resources */,
+				891D13872993D1E800E5A5F4 /* Manages */,
 				898360A9298BDD2A001511C4 /* APIclient */,
 				898360A8298BDD1F001511C4 /* ViewModels */,
 				898360A7298BDD16001511C4 /* Views */,
@@ -300,6 +311,7 @@
 				898360B1298BDDF9001511C4 /* RMEpisode.swift in Sources */,
 				89FDDCD7298BEC3E00DDD0E9 /* RMRequest.swift in Sources */,
 				89836096298BDB3F001511C4 /* RMTabViewController.swift in Sources */,
+				891D13892993D25200E5A5F4 /* RMImageLoader.swift in Sources */,
 				898360B8298BDEB2001511C4 /* RMEpisodeViewController.swift in Sources */,
 				89836092298BDB3F001511C4 /* AppDelegate.swift in Sources */,
 				898360AD298BDDD3001511C4 /* RMLocation.swift in Sources */,
